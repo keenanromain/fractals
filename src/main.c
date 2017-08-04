@@ -47,7 +47,7 @@ void		show_controls(void)
 	ft_putendl("\033[01;39m		\
 			\u23B8  Left Shitf to change colors			\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
-			\u23B8  Space to re-center the environment		\u23B8\033[0m");
+			\u23B8  Space to reset the environment		\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
 			\u23B8  C to freeze the screen for Julia types	\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
