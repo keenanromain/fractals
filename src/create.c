@@ -69,7 +69,7 @@ t_env		*init_env(int type)
 	str = "Mandelbrot,Mandelbrot Cube,Julia,Julia Cube";
 	s = ft_strsplit(str, ',');
 	if (!(env = (t_env *)malloc(sizeof(t_env))))
-		show_error(-3, "init_struct");
+		show_error(-3, "init_env");
 	ft_memset(env, 0, sizeof(env));
 	env->mlx = mlx_init();
 	env->p = mlx_new_window(env->mlx, WS, WS - 4, s[type - 1]);
