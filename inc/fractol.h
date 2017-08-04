@@ -125,6 +125,5 @@ int					expose_hook(t_env *env);
 int					exit_hook(t_env *env);
 int					modify_environment(t_env *env);
 void				modify_zoom(t_env *env, int x, int y, bool in);
-void				delete_color(t_color *colors);
 
 #endif

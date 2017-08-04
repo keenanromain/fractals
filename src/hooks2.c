@@ -33,24 +33,19 @@ int			expose_hook(t_env *env)
 	return (0);
 }
 
-void		delete_color(t_color *colors)
+int			exit_hook(t_env *env)
 {
 	int i;
 
 	i = -1;
-	while (++i < NB_C)
-		if (colors[i].rgb)
-			free(colors[i].rgb);
-}
-
-int			exit_hook(t_env *env)
-{
 	if (env)
 	{
 		if (env->mlx && env->p)
 			mlx_destroy_window(env->mlx, env->p);
 		if (env->colors)
-			delete_color(env->colors);
+			while (++i < NB_C)
+				if (env->colors[i].rgb)
+					free(env->colors[i].rgb);
 		if (env->mouse)
 			free(env->mouse);
 		if (env->keys)
