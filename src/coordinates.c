@@ -35,8 +35,8 @@ void					run_thru_coordinates(void *thread)
 
 	t = (t_pthread *)thread;
 	env = t->env;
-	y = ((WS / NB_T) * t->i) - 1;
-	while (++y < (WS / NB_T) * (t->i + 1))
+	y = ((WS / NB_T) * t->ti) - 1;
+	while (++y < (WS / NB_T) * (t->ti + 1))
 	{
 		x = -1;
 		while (++x < WS)

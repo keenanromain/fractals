@@ -14,18 +14,16 @@
 
 int			modify_environment(t_env *env)
 {
-	char y;
-	char x;
+	int y;
+	int x;
 
-	x = 1;
-	y = 1;
-	if (env->keys->right && !env->keys->left)
+	if (((x = 1)) && env->keys->right && !env->keys->left)
 		env->mid_x += ((env->size * 4) / WS);
 	else if (!env->keys->right && env->keys->left)
 		env->mid_x -= ((env->size * 4) / WS);
 	else
 		x = 0;
-	if (env->keys->up && !env->keys->down)
+	if (((y = 1)) && env->keys->up && !env->keys->down)
 		env->mid_y += ((env->size * 4) / WS);
 	else if (!env->keys->up && env->keys->down)
 		env->mid_y -= ((env->size * 4) / WS);

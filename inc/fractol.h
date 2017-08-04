@@ -83,7 +83,7 @@ typedef struct		s_env
 typedef struct		s_pthread
 {
 	t_env			*env;
-	int				i;
+	int				ti;
 }					t_pthread;
 
 int					main(int ac, char **av);

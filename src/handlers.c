@@ -51,7 +51,7 @@ pthread_t	handle_threads(t_env *env, int i)
 	if (!(t = (t_pthread *)malloc(sizeof(t_pthread))))
 		show_error(-3, "handle_threads");
 	t->env = env;
-	t->i = i;
+	t->ti = i;
 	func = (void *)run_thru_coordinates;
 	pthread_create(&pthread, NULL, func, t);
 	return (pthread);
