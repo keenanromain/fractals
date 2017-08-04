@@ -26,9 +26,9 @@ void		show_fractals(void)
 	ft_putendl("\033[01;39m		\
 			\u23B8  ./fractol julia				\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
-			\u23B8  ./fractol \"mandelbrot cube\"			\u23B8\033[0m");
+			\u23B8  ./fractol mcube				\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
-			\u23B8  ./fractol \"julia cube\"			\u23B8\033[0m");
+			\u23B8  ./fractol jcube				\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
 			\u23B8						\u23B8\033[0m");
 	ft_putendl("\033[01;39m					\u23B8\033[0m	   \033[01;36m\
