@@ -61,7 +61,7 @@ int			mand(t_env *env, double re, double im)
 	double	y;
 	double	tmp;
 
-	i = 0;
+	i = -1;
 	x = 0.0;
 	y = 0.0;
 	re = ((re / WS) * env->size) + env->mid_x - (env->size * 0.5);
@@ -82,7 +82,7 @@ int			juli(t_env *env, double x, double y)
 	double	re;
 	double	im;
 
-	i = 0;
+	i = -1;
 	x = ((x / WS) * env->size) + env->mid_x - (env->size * 0.5);
 	y = ((y / WS) * env->size) + env->mid_y - (env->size * 0.5);
 	re = (((double)env->mouse->horz - (double)(WS / 2)) / (double)WS);
