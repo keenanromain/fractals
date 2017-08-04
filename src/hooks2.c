@@ -37,7 +37,7 @@ void		delete_color(t_color *colors)
 {
 	int i;
 
-	i = 1;
+	i = -1;
 	while (++i < NB_C)
 		if (colors[i].rgb)
 			free(colors[i].rgb);
