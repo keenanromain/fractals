@@ -16,7 +16,7 @@ Julia Cube:
 
 ## Key Details
 
-The project was a great learning experience on child processes and multithreading as they are necessary to maintain the fluidity of the program. On line 112 in main, a child procress is created with a successful fork. From there, the child process runs the rest of the program while the parent process completes the execution of main. Depending on whether the user wants to open more than one fractal at a time, the forking for a new process sits inside a while loop so multiple processes can be created for each respective fractal. 
+The project was a great learning experience on child processes and multithreading as they are necessary to maintain the fluidity of the program. On line 112 in *main*, a child procress is created with a successful fork. From there, the child process runs the rest of the program while the parent process completes the execution of main. Depending on whether the user wants to open more than one fractal at a time, the forking for a new process sits inside a while loop so multiple processes can be created for each respective fractal. 
 
 <img width="439" alt="screen shot 2017-08-09 at 5 14 21 pm" src="https://user-images.githubusercontent.com/13093517/29236782-88f7b2d6-7ec5-11e7-8b1d-a9fe489ab7e8.png">
 
