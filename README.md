@@ -1,6 +1,6 @@
 # fractals
 
-This project creates colorful fractals designed with interactive components based on different keyboard and mouse events. Like 3d_wireframe, it uses the minilibx library to plot images onto the screen. 
+This project creates colorful fractals designed to be interacted with through keyboard and mouse events. Like 3d_wireframe, it uses the minilibx library ontop of OpenGL to plot images onto the screen. 
 
 Mandelbrot:
 <img width="1019" alt="screen shot 2017-08-11 at 6 22 18 pm" src="https://user-images.githubusercontent.com/13093517/29236636-0e8678dc-7ec2-11e7-968e-b9bb5dd52035.png">
@@ -16,43 +16,45 @@ Julia Cube:
 
 ## Key Details
 
-The project was a great learning experience on child processes and multithreading as they are necessary to maintain the fluidity of the program. On line 112 in *main*, a child procress is created with a successful fork. From there, the child process runs the rest of the program while the parent process completes the execution of *main*. Depending on whether the user wants to open more than one fractal at a time, the forking for a new process sits inside a while loop so multiple processes can be created for each respective fractal. 
+The project utilized child processes and multithreading to maintain the fluidity of the program's output. On line 112 in *main*, a child procress is created via a successful fork. This child process proceeds to run through the rest of the program while the parent process completes the execution of *main*. Depending on whether the user wants to open more than one fractal at a time, the forking of a new process sits inside a while loop so multiple processes can be created if needed. 
 
 <img width="439" alt="screen shot 2017-08-09 at 5 14 21 pm" src="https://user-images.githubusercontent.com/13093517/29236782-88f7b2d6-7ec5-11e7-8b1d-a9fe489ab7e8.png">
 
-The next interesting function is the environment initialization function. The environment struct pointer is the main struct pointer in the program and it holds the data needed for connecting to the mlx server in minilibx. From lines 74 to 83 in *init_env*, various pointers are set to function calls within this project and the minilibx library. For example, the pointers in lines 75 and 81 connect to the mlx functions required for creating both the window itself and the graphical image which spawns onto that window. Line 82 holds an integer array that stores data needed for later calculations. Lines 78 to 80 initiliaze the other struct pointers in this project for modification with the key and mouse hooks.
+The next interesting detail is the environment initialization function. The returned environment struct pointer is the program's main data structure. On top of holding the dimensions and figures needed to calculate the graphical image, it also incoporates the data for connecting to the mlx graphics server in the minilibx directory. From lines 74 to 83 in *init_env*, the struct's varied pointers point to function calls within the source code directory and the minilibx library. For example, the pointers in lines 75 and 81 connect to the mlx functions that create both the window itself and the graphical image that spawns on top of it. Lines 78 to 80 initialize the other struct variables of the project as pointer members of the environment variable. These structs serve as component pieces to be modified from key and mouse events.
 
 <img width="516" alt="screen shot 2017-08-09 at 5 15 24 pm" src="https://user-images.githubusercontent.com/13093517/29236943-8ca5bdda-7ec8-11e7-860e-de1a39a5e335.png">
 
-In line 78 above, the calling function *handle_colors* will be examined next. The format in this function serves as a template for the other handlers and demonstrates how the fractals are colored.
+The details to be examined next are in the the calling function *handle_colors* on line 78 above. This function matters as it's format served as a template for the other handlers in *init_env* and it's code demonstrates the coloring procedure as implied by the function's name.
 
 <img width="453" alt="screen shot 2017-08-09 at 5 16 08 pm" src="https://user-images.githubusercontent.com/13093517/29237034-8b121336-7eca-11e7-9226-fa7116cc1e33.png">
 
-After memory is allocated and set for the t_color struct pointer, it is passed through 10 coloring functions. Each coloring functions holds an integer array of 24 hard-coded hex values that are based on pleasing color palettes found online. Through a loop, this array of hex values is then transfered into the rgb member at an indexed position (9 in the example below) of the t_color struct pointer. The format of the function below is replicated for all 10 coloring functions.
+After memory is allocated and set for the color struct pointer, it is then passed through 10 coloring functions in rapid and sequential order. Each coloring functions holds an integer array of 24 hard-coded hex values that are based on aesthetic color palettes. Through a simple whileloop, this array of hex values is transfered into the rgb member at an indexed position (9 in the example below) of the color struct pointer. The modular design of the coloring function below is replicated for all 10 coloring functions with the exception of the hex value array.
 
 <img width="474" alt="screen shot 2017-08-09 at 5 16 23 pm" src="https://user-images.githubusercontent.com/13093517/29237091-a55233ce-7ecb-11e7-8685-78f29478822b.png">
 
-Two other important members of the environment struct pointer are the function pointers to *reset_func* and *redraw_func*. These two members contain the project's multithreading aspect and many of it's calculations. The *redraw_func* function in particular is worth exploring in depth.
+Two other important members of the environment struct pointer are the function pointers to *reset_func* and *redraw_func*. These two members contain the project's multithreading aspect and image calculations. The *redraw_func* function in particular is worth exploring in depth.
 
 <img width="482" alt="screen shot 2017-08-09 at 5 15 38 pm" src="https://user-images.githubusercontent.com/13093517/29237171-5b045aca-7ecd-11e7-82d3-0b578b7a97cf.png">
 
-An array of type pthread_t is created on line 32 of *redraw_func* which stores the threads that calculate the coordinates to be drawn. The array is filled in the running of the while loop on line 35 before being terminated in the following while loop on line 38. The rest of the function then outputs the determined values and resets them after the output has been accomplished. On line 36, *handle_threads* passes back each newly created pthread_t which holds the function ultimately responsible for the coloring and placement of each coordinate. These coordinates are found by running through all of the x and y values of the window and, depending on the type of fractal, computing the math needed to determine each coordinate. The placement of each coordinate follows a simple format inspired from this wonderful resource below:
+An array of type pthread_t is created on line 32 of *redraw_func*. The container stores the multiple threads that calculate the coordinates to be drawn. It is filled through a run of the while loop on line 35 before being terminated with the subsequent while loop on line 38. The rest of the function outputs the determined values and adjusts them after output has been accomplished. On line 36, *handle_threads* passes back each newly created pthread_t which contains data like the coloring and placement of each coordinate. These coordinates are found by running through all of the x and y values of the entire window and computing the math behind the correct output of each coordinate. The placement of each coordinate follows a simple formula inspired from this wonderful resource below:
 
 http://lodev.org/cgtutor/juliamandelbrot.html 
 
-An example of the math needed to create the Mandelbrot set (shortened to simply *mand* in the function below) can be found in this snippet:
+An example of the math behind  one of the fractal types (the Mandelbrot set; shortened to simply *mand* in the function below) can be found in the following snippet:
 
 <img width="548" alt="screen shot 2017-08-09 at 5 17 15 pm" src="https://user-images.githubusercontent.com/13093517/29237304-6d17e4f4-7ed0-11e7-84bb-e156507e85ef.png">
 
-Doubles are used for more precise values and the real and imaginary doubles are based on the midpoints and the sizes of the window and image. Note: for the julia types the real and imaginary doubles are based on the position of the horizontal and vertical values of the mouse rather than the midpoints. From here, a loop is run which is broken if the max number of iterations is exceeded or if the x and y values combined exceed 4. This loop ideally breaks from the later condition as it would prove that we have valid coordinates worth placing. If the loop breaks from the second condition and we have valid coordinates, the calling function of the fractal calculation (*mand* in this instance) passes the index, environment struct pointer, and coordinates to *calculate_coordinate*. 
+The data type double is used instead of interger due to the more precise nature of the type. The calculations to find the real and imaginary numbers are formulated around the midpoints of the image, the size of the image, and the complex number's relationship to the window size. (**Note**: the complex numbers for the julia types are based on the position of the horizontal and vertical values of the mouse instead of the midpoints The formula used to find the real and imaginary numbers for the mandelbrot types is instead used to find the x and y values for the julia types). Afterwards, a loop is run to calculate the new values of x and y. It is broken if the max number of iterations is exceeded or if the combined x and y values exceed a set limit. If the loop breaks from exceeding the set limit, valid coordinates have been found. The preceding function is returned the loop's index (*mand*'s index for this fractal example) and then passes the same index, environment variable, and the valid coordinates to *calculate_coordinate*. 
 
 <img width="577" alt="screen shot 2017-08-11 at 8 55 48 pm" src="https://user-images.githubusercontent.com/13093517/29237654-833352f8-7ed7-11e7-9102-ce153c8aad1b.png">
 
-Finally, with valid coordinates and a number of colors to choose from, *calculate_coordinate* determines the specific color for the given coordinates via modulus division on line 21. It may look complicated at first glance, but the calculation is simply the index determined from the fractal calculation above added to the predetermined offset. This sum is then modulo by the total number of colors which results in an index. This new index, j, is set as the color stored in the integer array responsible for viewing. The remainder of this program includes the key and mouse events that create the interactive elements of the program. Please refer to the User Interface in the **Features** section for an understanding of what these events can do.  
+Finally, with the coordinates and colors taken care of, *calculate_coordinate* combines the two primarily through modulus division on line 21. The calculation takes the index determined from the calculation above and adds it to a predetermined offset. This sum is then modulo by the sum total of colors which results in an index. This new index is stored in an integer array for later data processing and output. 
+
+The remainder of this program includes key and mouse hooks that are behind the interactive elements of the project. Please refer to the User Interface in the **Features** section for an understanding of what these events can do.  
 
 ## Features
 
-The following images are screenshots from exploring the fractals at varied depth. At the end of this section is an image of the user interface that showcases the features in full.
+The following images are screenshots from exploring the fractals at varied depth and a screenshot of the user interface.
 
 Mandelbrot zoomed with increased iterations:
 
