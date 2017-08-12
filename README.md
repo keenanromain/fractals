@@ -16,7 +16,7 @@ Julia Cube:
 
 ## Key Details
 
-Fractals was a great learning experience with regards to creating child processes and multiple threads. These were necessary components to maintain the fluidity of the program. In 'main', I create a child procress in 112 on successful forking. From there, the child process executes the rest of the program while the parent executes the remaining code in 'main'. Depending on whether the user wants to open more than one fractal at a time, the forking lies within a loop so multiple child processes can be created for each respective fractal. 
+The project was a great learning experience with regards to creating child processes and multiple threads. These were necessary components to maintain the fluidity of the program. In 'main', I create a child procress in 112 on successful forking. From there, the child process executes the rest of the program while the parent executes the remaining code in 'main'. Depending on whether the user wants to open more than one fractal at a time, the forking lies within a loop so multiple child processes can be created for each respective fractal. 
 
 <img width="439" alt="screen shot 2017-08-09 at 5 14 21 pm" src="https://user-images.githubusercontent.com/13093517/29236782-88f7b2d6-7ec5-11e7-8b1d-a9fe489ab7e8.png">
 
