@@ -24,7 +24,7 @@ The next interesting function is the environment initialization function. The en
 
 <img width="516" alt="screen shot 2017-08-09 at 5 15 24 pm" src="https://user-images.githubusercontent.com/13093517/29236943-8ca5bdda-7ec8-11e7-860e-de1a39a5e335.png">
 
-In line 78 above, the called function *handle_colors* will be examined next. The format in this function serves as a template for the other handlers and demonstrates how the fractals are colored.
+In line 78 above, the calling function *handle_colors* will be examined next. The format in this function serves as a template for the other handlers and demonstrates how the fractals are colored.
 
 <img width="453" alt="screen shot 2017-08-09 at 5 16 08 pm" src="https://user-images.githubusercontent.com/13093517/29237034-8b121336-7eca-11e7-9226-fa7116cc1e33.png">
 
