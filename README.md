@@ -52,7 +52,7 @@ Finally, with valid coordinates and a number of colors to choose from, 'calculat
 
 ## Features
 
-The following images are screenshots from exploring the fractals at varied depth. At the end of this section is an image of the user interface which explains the features and controls in full.
+The following images are screenshots from exploring the fractals at varied depth. At the end of this section is an image of the user interface that explains the features in full.
 
 Mandelbrot zoomed:
 
