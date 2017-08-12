@@ -24,6 +24,11 @@ The next interesting function is the initialization of the environment struct po
 
 <img width="516" alt="screen shot 2017-08-09 at 5 15 24 pm" src="https://user-images.githubusercontent.com/13093517/29236943-8ca5bdda-7ec8-11e7-860e-de1a39a5e335.png">
 
+The function called in line 78 above will be the next part of the project to be examined. The format in 'handle_color' serves as a template for the other handler functions and demonstrates how the coloring of the fractals works.
+
+<img width="453" alt="screen shot 2017-08-09 at 5 16 08 pm" src="https://user-images.githubusercontent.com/13093517/29237034-8b121336-7eca-11e7-9226-fa7116cc1e33.png">
+
+Two other important members of the environment struct pointer in 'init_env', are the function pointers to 'reset_func' and 'redraw_func'. These two members hold the multithreading and some of the calculations used in this project. 'Redraw_func' in particular is worth exploring in depth.
 
 ## Implementation
 
