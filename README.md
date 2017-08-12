@@ -3,7 +3,7 @@
 This project creates colorful fractals designed to be interacted with through keyboard and mouse events. Like 3d_wireframe, it uses the minilibx library on top of OpenGL to plot images onto the screen. 
 
 Mandelbrot:
-<img width="1019" alt="screen shot 2017-08-11 at 6 22 18 pm" src="https://user-images.githubusercontent.com/13093517/29236636-0e8678dc-7ec2-11e7-968e-b9bb5dd52035.png">
+<img width="1017" alt="screen shot 2017-08-12 at 4 08 18 pm" src="https://user-images.githubusercontent.com/13093517/29244849-0d59a832-7f79-11e7-9870-652d442e179d.png">
 
 Julia:
 <img width="1022" alt="screen shot 2017-08-11 at 6 25 29 pm" src="https://user-images.githubusercontent.com/13093517/29236667-92f76234-7ec2-11e7-8fd0-84bb5b47e725.png">
