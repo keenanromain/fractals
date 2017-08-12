@@ -98,7 +98,7 @@ A successful make command will create an executable called 'fractol'. To see the
 ```
 ./fractol
 ```
-Choose one or a combination of your prefered fractal types to execute following the usage specifications.
+Following the usage specifications, choose one or a combination of your prefered fractal types to run.
 
 ## Acknowledgement
 This project was developed at École 42 USA in Fremont, California.
