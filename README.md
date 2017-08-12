@@ -80,7 +80,7 @@ Julia Cube zoomed:
 
 User Interface:
 
-<img width="403" alt="screen shot 2017-08-11 at 8 30 56 pm" src="https://user-images.githubusercontent.com/13093517/29237486-0a5fcc24-7ed4-11e7-81a5-4fde6cdd1f2e.png">
+<img width="389" alt="screen shot 2017-08-11 at 9 47 19 pm" src="https://user-images.githubusercontent.com/13093517/29237987-baac444a-7ede-11e7-9004-b5805a65baed.png">
 
 ## Implementation
 
