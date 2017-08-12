@@ -94,7 +94,7 @@ rm -rf libft
 git clone https://github.com/keenanromain/libft.git
 make
 ```
-A successful make command will create an executable called 'fractol'. To see the proper usage, run this executable from the root directory of the cloned fractals repo like such:
+A successful make command will create an executable called 'fractol'. To see the proper usage, run this executable from the fractals root directory like such:
 ```
 ./fractol
 ```
