@@ -32,12 +32,14 @@ After memory is allocated and set for the t_color struct pointer, it is passed t
 
 <img width="474" alt="screen shot 2017-08-09 at 5 16 23 pm" src="https://user-images.githubusercontent.com/13093517/29237091-a55233ce-7ecb-11e7-8685-78f29478822b.png">
 
-Two other important members of the environment struct pointer are the function pointers to 'reset_func' and 'redraw_func'. These two members hold the project's multithreading aspect and many of it's calculations. 'Redraw_func' in particular is worth exploring in depth.
+Two other important members of the environment struct pointer are the function pointers to 'reset_func' and 'redraw_func'. These two members hold the project's multithreading aspect and many of it's calculations. The 'redraw_func' function in particular is worth exploring in depth.
 
 <img width="482" alt="screen shot 2017-08-09 at 5 15 38 pm" src="https://user-images.githubusercontent.com/13093517/29237171-5b045aca-7ecd-11e7-82d3-0b578b7a97cf.png">
 
-An array of type pthread_t is created on line 32 that stores the threads which calculate the coordinates to be drawn. The array is filled with the running of the while loop on line 35 before being terminated in the following while loop on line 38. With the loop on line 35 however, 'handle_threads' passes back each created pthread_t which holds the function ultimately responsible for the coloring and placement of each coordinate. Depending on the type of fractal, the math used to determine the placement follows a simple format inspired from the wonderful resource below:
-http://lodev.org/cgtutor/juliamandelbrot.html  
+An array of type pthread_t is created on line 32 of 'redraw_func' which stores the threads that calculate the coordinates to be drawn. The array is filled in the running of the while loop on line 35 before being terminated in the following while loop on line 38. On line 36, 'handle_threads' passes back each newly created pthread_t which holds the function ultimately responsible for the coloring and placement of each coordinate. These coordinates are found by running through all of the x and y values of the window and, depending on the type of fractal, the math used to determine said placement follows a simple format inspired from the wonderful resource below:
+http://lodev.org/cgtutor/juliamandelbrot.html 
+
+An example of the math used for the Mandelbrot set (shortened to simply mand) can be found in the snippet below:
 
 ## Implementation
 
