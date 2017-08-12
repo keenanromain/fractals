@@ -46,13 +46,23 @@ An example of the math needed to create the Mandelbrot set (shortened to simply 
 
 ## Features
 
-The following images are screenshots from exploring the 4 fractals at different depths of zoom. At the very end of this section is a image of the user interface which explains the features and controls in full.
+The following images are screenshots from exploring the 4 fractals at different depths of zoom. At the very end of this section is an image of the user interface which explains the features and controls in full.
 
-Mandelbrot zoom:
+Mandelbrot zoomed:
 
 <img width="1020" alt="screen shot 2017-08-11 at 6 35 47 pm" src="https://user-images.githubusercontent.com/13093517/29237472-a336a0c2-7ed3-11e7-9fd6-2f072c144ee5.png">
 
 <img width="1021" alt="screen shot 2017-08-11 at 8 12 10 pm" src="https://user-images.githubusercontent.com/13093517/29237474-a5dfc060-7ed3-11e7-8d0d-20d5afc9b5e1.png">
+
+Julia zoomed:
+
+<img width="1018" alt="screen shot 2017-08-11 at 8 14 04 pm" src="https://user-images.githubusercontent.com/13093517/29237496-32452fa4-7ed4-11e7-9826-ca8973b6950e.png">
+
+<img width="1013" alt="screen shot 2017-08-11 at 8 15 30 pm" src="https://user-images.githubusercontent.com/13093517/29237495-32436dcc-7ed4-11e7-85f0-5e7dbbccc676.png">
+
+User Interface:
+
+<img width="403" alt="screen shot 2017-08-11 at 8 30 56 pm" src="https://user-images.githubusercontent.com/13093517/29237486-0a5fcc24-7ed4-11e7-81a5-4fde6cdd1f2e.png">
 
 ## Implementation
 
