@@ -45,7 +45,7 @@ void		show_controls(void)
 	ft_putendl("\033[01;39m		\
 			\u23B8  W, A, S & D to move across environment	\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
-			\u23B8  Left Shitf to change colors			\u23B8\033[0m");
+			\u23B8  Left Shift to change colors			\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
 			\u23B8  Space to reset the environment		\u23B8\033[0m");
 	ft_putendl("\033[01;39m		\
