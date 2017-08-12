@@ -40,10 +40,19 @@ An array of type pthread_t is created on line 32 of 'redraw_func' which stores t
 
 http://lodev.org/cgtutor/juliamandelbrot.html 
 
-An example of the math needed for the Mandelbrot set (shortened to simply mand in the function below) can be found in this snippet:
+An example of the math needed to create the Mandelbrot set (shortened to simply 'mand' in the function below) can be found in this snippet:
 
 <img width="548" alt="screen shot 2017-08-09 at 5 17 15 pm" src="https://user-images.githubusercontent.com/13093517/29237304-6d17e4f4-7ed0-11e7-84bb-e156507e85ef.png">
 
+## Features
+
+The following images are screenshots from exploring the 4 fractals at different depths of zoom. At the very end of this section is a image of the user interface which explains the features and controls in full.
+
+Mandelbrot zoom:
+
+<img width="1020" alt="screen shot 2017-08-11 at 6 35 47 pm" src="https://user-images.githubusercontent.com/13093517/29237472-a336a0c2-7ed3-11e7-9fd6-2f072c144ee5.png">
+
+<img width="1021" alt="screen shot 2017-08-11 at 8 12 10 pm" src="https://user-images.githubusercontent.com/13093517/29237474-a5dfc060-7ed3-11e7-8d0d-20d5afc9b5e1.png">
 
 ## Implementation
 
