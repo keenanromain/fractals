@@ -58,7 +58,7 @@ Julia zoomed:
 
 <img width="1018" alt="screen shot 2017-08-11 at 8 14 04 pm" src="https://user-images.githubusercontent.com/13093517/29237496-32452fa4-7ed4-11e7-9826-ca8973b6950e.png">
 
-<img width="1013" alt="screen shot 2017-08-11 at 8 15 30 pm" src="https://user-images.githubusercontent.com/13093517/29237495-32436dcc-7ed4-11e7-85f0-5e7dbbccc676.png">
+<img width="1015" alt="screen shot 2017-08-11 at 8 36 57 pm" src="https://user-images.githubusercontent.com/13093517/29237533-deb02690-7ed4-11e7-8a5d-da9e4dee84ed.png">
 
 Mandelbrot Cube zoomed:
 
