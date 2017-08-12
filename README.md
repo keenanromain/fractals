@@ -54,25 +54,25 @@ Finally, with valid coordinates and a number of colors to choose from, 'calculat
 
 The following images are screenshots from exploring the fractals at varied depth. At the end of this section is an image of the user interface that explains the features in full.
 
-Mandelbrot zoomed:
+Mandelbrot zoomed with increased iterations:
 
 <img width="1020" alt="screen shot 2017-08-11 at 6 35 47 pm" src="https://user-images.githubusercontent.com/13093517/29237472-a336a0c2-7ed3-11e7-9fd6-2f072c144ee5.png">
 
 <img width="1023" alt="screen shot 2017-08-11 at 8 41 41 pm" src="https://user-images.githubusercontent.com/13093517/29237556-87d02388-7ed5-11e7-984b-f5b549f45827.png">
 
-Julia zoomed:
+Julia zoomed with increased iterations:
 
 <img width="1018" alt="screen shot 2017-08-11 at 8 14 04 pm" src="https://user-images.githubusercontent.com/13093517/29237496-32452fa4-7ed4-11e7-9826-ca8973b6950e.png">
 
 <img width="1015" alt="screen shot 2017-08-11 at 8 36 57 pm" src="https://user-images.githubusercontent.com/13093517/29237533-deb02690-7ed4-11e7-8a5d-da9e4dee84ed.png">
 
-Mandelbrot Cube zoomed:
+Mandelbrot Cube zoomed with increased iterations:
 
 <img width="1019" alt="screen shot 2017-08-11 at 8 17 06 pm" src="https://user-images.githubusercontent.com/13093517/29237503-6263feea-7ed4-11e7-98b5-68833ee1b3e3.png">
 
 <img width="1019" alt="screen shot 2017-08-11 at 8 19 09 pm" src="https://user-images.githubusercontent.com/13093517/29237502-62629b18-7ed4-11e7-8e64-8db067e7cb96.png">
 
-Julia Cube zoomed:
+Julia Cube zoomed with increased iterations:
 
 <img width="1019" alt="screen shot 2017-08-11 at 8 22 02 pm" src="https://user-images.githubusercontent.com/13093517/29237510-716d9b12-7ed4-11e7-8700-0d002b9c9466.png">
 
