@@ -28,7 +28,7 @@ In line 78 above, the called function *handle_color* will be examined next. The 
 
 <img width="453" alt="screen shot 2017-08-09 at 5 16 08 pm" src="https://user-images.githubusercontent.com/13093517/29237034-8b121336-7eca-11e7-9226-fa7116cc1e33.png">
 
-After memory is allocated and set for the t_color struct pointer, it is passed through 10 coloring functions. Each coloring functions holds an integer array of 24 hard-coded hex values that are based on pleasing color palettes found online. This integer array is then transfered into the rgb member at an indexed position (9 in the example below) of the t_color struct pointer. The format of the function below is replicated for all 10 coloring functions.
+After memory is allocated and set for the t_color struct pointer, it is passed through 10 coloring functions. Each coloring functions holds an integer array of 24 hard-coded hex values that are based on pleasing color palettes found online. This integer array of hex values is then transfered into the rgb member at an indexed position (9 in the example below) of the t_color struct pointer. The format of the function below is replicated for all 10 coloring functions.
 
 <img width="474" alt="screen shot 2017-08-09 at 5 16 23 pm" src="https://user-images.githubusercontent.com/13093517/29237091-a55233ce-7ecb-11e7-8685-78f29478822b.png">
 
