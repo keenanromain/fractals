@@ -84,5 +84,19 @@ User Interface:
 
 ## Implementation
 
+To run this project, clone this repo into your terminal and generate the executable via the make command.
+```
+git clone https://github.com/keenanromain/fractals.git
+cd fractals
+rm -rf libft
+git clone https://github.com/keenanromain/libft.git
+make
+```
+A successful make command will output that an executable called 'fractals' has been created. Run this executable from the root directory of the cloned fractals repo to see the proper usage like such:
+```
+./fractals
+```
+Choose one or any combination of your prefered fractal types to execute following the specifications of the usage.
+
 ## Acknowledgement
 This project was developed at École 42 USA in Fremont, California.
