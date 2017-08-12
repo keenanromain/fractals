@@ -96,7 +96,7 @@ A successful make command will output that an executable called 'fractals' has b
 ```
 ./fractals
 ```
-Choose one or any combination of your prefered fractal types to execute following the specifications of the usage.
+Choose one or any combination of your prefered fractal types for execution following the specifications of the usage.
 
 ## Acknowledgement
 This project was developed at École 42 USA in Fremont, California.
