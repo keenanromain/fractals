@@ -36,10 +36,14 @@ Two other important members of the environment struct pointer are the function p
 
 <img width="482" alt="screen shot 2017-08-09 at 5 15 38 pm" src="https://user-images.githubusercontent.com/13093517/29237171-5b045aca-7ecd-11e7-82d3-0b578b7a97cf.png">
 
-An array of type pthread_t is created on line 32 of 'redraw_func' which stores the threads that calculate the coordinates to be drawn. The array is filled in the running of the while loop on line 35 before being terminated in the following while loop on line 38. On line 36, 'handle_threads' passes back each newly created pthread_t which holds the function ultimately responsible for the coloring and placement of each coordinate. These coordinates are found by running through all of the x and y values of the window and, depending on the type of fractal, the math used to determine said placement follows a simple format inspired from the wonderful resource below:
+An array of type pthread_t is created on line 32 of 'redraw_func' which stores the threads that calculate the coordinates to be drawn. The array is filled in the running of the while loop on line 35 before being terminated in the following while loop on line 38. The rest of the function then outputs the determined values and resets them after the output has been accomplished. On line 36, 'handle_threads' passes back each newly created pthread_t which holds the function ultimately responsible for the coloring and placement of each coordinate. These coordinates are found by running through all of the x and y values of the window and, depending on the type of fractal, computing the math needed to determine each coordinate. The placement of each coordinate follows a simple format inspired from this wonderful resource below:
+
 http://lodev.org/cgtutor/juliamandelbrot.html 
 
-An example of the math used for the Mandelbrot set (shortened to simply mand) can be found in the snippet below:
+An example of the math needed for the Mandelbrot set (shortened to simply mand in the function below) can be found in this snippet:
+
+<img width="548" alt="screen shot 2017-08-09 at 5 17 15 pm" src="https://user-images.githubusercontent.com/13093517/29237304-6d17e4f4-7ed0-11e7-84bb-e156507e85ef.png">
+
 
 ## Implementation
 
