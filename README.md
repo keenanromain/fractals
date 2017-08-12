@@ -52,7 +52,7 @@ Mandelbrot zoomed:
 
 <img width="1020" alt="screen shot 2017-08-11 at 6 35 47 pm" src="https://user-images.githubusercontent.com/13093517/29237472-a336a0c2-7ed3-11e7-9fd6-2f072c144ee5.png">
 
-<img width="1021" alt="screen shot 2017-08-11 at 8 12 10 pm" src="https://user-images.githubusercontent.com/13093517/29237474-a5dfc060-7ed3-11e7-8d0d-20d5afc9b5e1.png">
+<img width="1023" alt="screen shot 2017-08-11 at 8 41 41 pm" src="https://user-images.githubusercontent.com/13093517/29237556-87d02388-7ed5-11e7-984b-f5b549f45827.png">
 
 Julia zoomed:
 
