@@ -1,6 +1,6 @@
 # fractals
 
-This project creates colorful fractals designed with interactive components based on different keyboard and mouse events. Like 3d_wireframe, it uses the minilibx library to plot images to the screen. 
+This project creates colorful fractals designed with interactive components based on different keyboard and mouse events. Like 3d_wireframe, it uses the minilibx library to plot images onto the screen. 
 
 Mandelbrot:
 <img width="1019" alt="screen shot 2017-08-11 at 6 22 18 pm" src="https://user-images.githubusercontent.com/13093517/29236636-0e8678dc-7ec2-11e7-968e-b9bb5dd52035.png">
@@ -13,3 +13,10 @@ Mandelbrot Cube:
 
 Julia Cube:
 <img width="1023" alt="screen shot 2017-08-11 at 6 31 16 pm" src="https://user-images.githubusercontent.com/13093517/29236698-4ba7b2ac-7ec3-11e7-8186-0cf07c2d0f6d.png">
+
+## Key Details
+
+## Implementation
+
+## Acknowledgement
+This project was developed at École 42 USA in Fremont, California.
