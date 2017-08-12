@@ -12,4 +12,4 @@ Mandelbrot Cube:
 <img width="1016" alt="screen shot 2017-08-11 at 6 27 32 pm" src="https://user-images.githubusercontent.com/13093517/29236682-f6deac30-7ec2-11e7-8814-657c0d9d3a3e.png">
 
 Julia Cube:
-<img width="1021" alt="screen shot 2017-08-11 at 6 28 35 pm" src="https://user-images.githubusercontent.com/13093517/29236684-01bd9be8-7ec3-11e7-9f63-20f03e6abc09.png">
+<img width="1023" alt="screen shot 2017-08-11 at 6 31 16 pm" src="https://user-images.githubusercontent.com/13093517/29236698-4ba7b2ac-7ec3-11e7-8186-0cf07c2d0f6d.png">
