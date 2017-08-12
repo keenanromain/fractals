@@ -44,6 +44,12 @@ An example of the math needed to create the Mandelbrot set (shortened to simply 
 
 <img width="548" alt="screen shot 2017-08-09 at 5 17 15 pm" src="https://user-images.githubusercontent.com/13093517/29237304-6d17e4f4-7ed0-11e7-84bb-e156507e85ef.png">
 
+Doubles are used for more precise values and the real and imaginary doubles are based on the midpoints and the sizes of the window and image. Note: for the julia types the real and imaginary doubles are based on the position of the horizontal and vertical values of the mouse rather than the midpoints. From here, a loop is run which is broken if the max number of iterations is exceeded or if the x and y values combined exceed 4. This loop ideally breaks from the later condition as it would prove that we have valid coordinates worth placing. If the loop breaks from the second condition and we have valid coordinates, the calling function of the fractal calculation ('mand' in this instance) passes the index, environment struct pointer, and coordinates to 'calculate_coordinate'. 
+
+<img width="577" alt="screen shot 2017-08-11 at 8 55 48 pm" src="https://user-images.githubusercontent.com/13093517/29237654-833352f8-7ed7-11e7-9102-ce153c8aad1b.png">
+
+Finally, with valid coordinates and a number of colors to choose from, 'calculate_coordinate' determines the specific color for the given coordinates via modulus division on line 21. It may look complicated at first glance, but the calculation is simply the index determined from the fractal calculation above added to the offset. This sum is then modulo by the total number of colors which gives an index. This new index, j, is set as the color stored in the integer array responsible for aesthetic viewing. The remainder of this program includes the key and mouse events that create the interactive elements of the program. Please refer to the User Interface in the **Features** section for an understanding of what's possible.  
+
 ## Features
 
 The following images are screenshots from exploring the 4 fractals at different depths of zoom. At the very end of this section is an image of the user interface which explains the features and controls in full.
