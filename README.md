@@ -94,7 +94,7 @@ make
 ```
 A successful make command will output that an executable called 'fractals' has been created. Run this executable from the root directory of the cloned fractals repo to see the proper usage like such:
 ```
-./fractals
+./fractol
 ```
 Choose one or any combination of your prefered fractal types for execution following the specifications of the usage.
 
