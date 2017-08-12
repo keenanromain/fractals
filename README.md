@@ -16,9 +16,14 @@ Julia Cube:
 
 ## Key Details
 
-The project was a great learning experience for creating child processes and multiple threads. These were necessary components to maintain the fluidity of the program. In main, I create a child procress on line 112 with a successful fork. From there, the child process executes the rest of the program while the parent process executes the remaining code in main. Depending on whether the user wants to open more than one fractal at a time, the forking resides within a loop so multiple processes can be created for each respective fractal. 
+The project was a great learning experience for creating child processes and multiple threads. These were necessary components to maintain the fluidity of the program. On line 112 in main, a child procress is created with a successful fork. From there, the child process executes the rest of the program while the parent process remains in main. Depending on whether the user wants to open more than one fractal at a time, the forking sits inside a while loop so multiple processes can be created for each respective fractal. 
 
 <img width="439" alt="screen shot 2017-08-09 at 5 14 21 pm" src="https://user-images.githubusercontent.com/13093517/29236782-88f7b2d6-7ec5-11e7-8b1d-a9fe489ab7e8.png">
+
+The next interesting function is the initialization of the environment struct pointer. It is the main struct pointer and it holds the data needed for connecting with the mlx server in minilibx. From lines 74 to 83 in 'init_env', various pointers are set to functions within this project and the minilibx library. For example, the pointers in lines 75 and 81 connect to the mlx functions required for creating both the window itself and the graphical image that spawns onto that window. Line 82 holds an integer array that stores data needed for later calculations. Lines 78 to 80 initiliaze the other structs in this project which are modified with key and mouse hooks.
+
+<img width="516" alt="screen shot 2017-08-09 at 5 15 24 pm" src="https://user-images.githubusercontent.com/13093517/29236943-8ca5bdda-7ec8-11e7-860e-de1a39a5e335.png">
+
 
 ## Implementation
 
