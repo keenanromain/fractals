@@ -60,6 +60,18 @@ Julia zoomed:
 
 <img width="1013" alt="screen shot 2017-08-11 at 8 15 30 pm" src="https://user-images.githubusercontent.com/13093517/29237495-32436dcc-7ed4-11e7-85f0-5e7dbbccc676.png">
 
+Mandelbrot Cube zoomed:
+
+<img width="1019" alt="screen shot 2017-08-11 at 8 17 06 pm" src="https://user-images.githubusercontent.com/13093517/29237503-6263feea-7ed4-11e7-98b5-68833ee1b3e3.png">
+
+<img width="1019" alt="screen shot 2017-08-11 at 8 19 09 pm" src="https://user-images.githubusercontent.com/13093517/29237502-62629b18-7ed4-11e7-8e64-8db067e7cb96.png">
+
+Julia Cube zoomed:
+
+<img width="1019" alt="screen shot 2017-08-11 at 8 22 02 pm" src="https://user-images.githubusercontent.com/13093517/29237510-716d9b12-7ed4-11e7-8700-0d002b9c9466.png">
+
+<img width="1020" alt="screen shot 2017-08-11 at 8 23 56 pm" src="https://user-images.githubusercontent.com/13093517/29237509-716bc012-7ed4-11e7-9ff2-b327f25a7676.png">
+
 User Interface:
 
 <img width="403" alt="screen shot 2017-08-11 at 8 30 56 pm" src="https://user-images.githubusercontent.com/13093517/29237486-0a5fcc24-7ed4-11e7-81a5-4fde6cdd1f2e.png">
