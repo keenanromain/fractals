@@ -84,7 +84,7 @@ User Interface:
 
 <img width="389" alt="screen shot 2017-08-11 at 9 47 19 pm" src="https://user-images.githubusercontent.com/13093517/29237987-baac444a-7ede-11e7-9004-b5805a65baed.png">
 
-## Implementation
+## Implementation (Mac OSX Sierra)
 
 To run this project, clone this repo into your terminal and generate the executable via the make command.
 ```
